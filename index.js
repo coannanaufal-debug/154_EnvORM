@@ -18,3 +18,7 @@ db.sequelize.sync()
     .catch((err) => {
         console.log(err);
     })
+
+    app.post("/komik", async (req, res) => {
+    const data = req.body;
+    try {
